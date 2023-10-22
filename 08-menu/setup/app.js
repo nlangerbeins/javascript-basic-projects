@@ -108,6 +108,8 @@ function diplayMenuItems(menuItems) {
           </div>
         </article>`;
   });
+
+  // using join method to delete all spaces and commas
   displayMenu = displayMenu.join('');
   // console.log(displayMenu);
 
@@ -116,7 +118,7 @@ function diplayMenuItems(menuItems) {
 
 // display buttons dynamically
 function displayMenuButtons() {
-  // add buttons catgeories
+  // add buttons categories
   const categories = menu.reduce(
     function (acc, item) {
       if (!acc.includes(item.category)) {
